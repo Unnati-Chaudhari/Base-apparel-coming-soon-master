@@ -1,0 +1,249 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: Josefin Sans, sans-serif;
+}
+
+.main_container {
+    height: 30rem;
+    width: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* for adding the content */
+.content {
+    height: 30rem;
+    width: 35rem;
+    background-color: hsl(0, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* for adding the photograph */
+.photo {
+    height: 30rem;
+    width: 25rem;
+    background-image: url("images/hero-desktop.jpg");
+    background-size: cover;
+}
+
+/* now adding the main content */
+.logo {
+    height: 5rem;
+    width: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main_logo {
+    height: 2rem;
+    width: 10rem;
+    background-image: url("images/logo.svg");
+    background-size: cover;
+}
+
+.heading {
+    height: 10rem;
+    width: 20rem;
+    font-size: 20px;
+    padding-top: 4.5rem;
+    
+}
+
+.info {
+    height: 7rem;
+    width: 22rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    color: hsl(0, 74%, 74%);
+}
+
+#were {
+    color: hsl(0, 74%, 74%);
+    font-weight: 100;
+}
+
+.email-box {
+    height: 8rem;
+    width: 22rem;
+    padding-top: 1.8rem;
+
+}
+
+.email input {
+    height: 3rem;
+    width: 17rem;
+    border-radius: 50px;  
+}
+
+
+#email {
+    color: hsl(0, 36%, 70%);
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.box {
+    height: 2.8rem;
+    width: 22rem;
+    border: 2px solid hsl(0, 80%, 86%);
+     border-radius: 50px;
+     position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.arrow {
+    height: 3rem;
+    width: 5rem;
+    background-color: hsl(0, 93%, 68%);
+  border-radius: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+    height: 2rem;
+    width: 1rem;
+    background-image: url("images/icon-arrow.svg");
+  background-size: cover;
+}
+
+#message {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+    color: red;
+}
+
+#email.error {
+    border: 2px solid red;
+}
+
+
+/* media queries for responsiveness */
+
+
+@media (max-width: 768px) {
+
+    .main {
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+        background-color: hsl(0, 100%, 98%);
+        display: block;
+    }
+
+    .main_container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+   
+    .content {
+        display: contents;
+    }
+
+    
+    .logo {
+        order: 1;
+        width: 100%;
+        height: 5rem;
+        padding-left: 2rem;
+        box-sizing: border-box;
+        background-color: hsl(0, 100%, 98%);
+    }
+
+    .main_logo {
+        width: 8rem;
+        height: 1.6rem;
+    }
+
+    
+    .photo {
+        order: 2;
+        width: 100%;
+        height: 20rem;
+        background-image: url("images/hero-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    .heading {
+        order: 3;
+        width: 100%;
+        height: auto;
+        padding: 3rem 2rem 0;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .heading h1 {
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    
+    .info {
+        order: 4;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 2rem 0;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    
+    .email-box {
+        order: 5;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .box {
+        width: 100%;
+        height: 3rem;
+    }
+
+    .email {
+        flex: 1;
+    }
+
+    .email input {
+        width: 100%;
+        height: 3rem;
+        padding-left: 1.2rem;
+        box-sizing: border-box;
+    }
+
+    .arrow {
+        flex-shrink: 0;
+        width: 4.5rem;
+        height: 3rem;
+    }
+}
