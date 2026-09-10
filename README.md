@@ -28,12 +28,12 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop-design](./design/Desktop-design.png)
-![Active-state-design](./design/Active-state-design.png)
 
 ### Links
 
 - Solution URL: [Solution URL](file:///E:/purandare/DELL%20User/OneDrive/Desktop/webdev/base-apparel-coming-soon-master/base-apparel-coming-soon-master/index.html)
-- Live Site URL: [live site URL ](https://your-live-site-url.com)
+- Live Site URL: [live site URL ]( https://unnati-chaudhari.github.io/Base-apparel-coming-soon-master/
+)
 
 ### Built with
 - HTML
